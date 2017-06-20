@@ -6,7 +6,7 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient;
 
-  const player = new Schema ({
+  const playerSchema = new Schema ({
     character: { type: String },
     userId: { type: String},
     clickCount: { type: Number}
