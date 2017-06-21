@@ -5,7 +5,7 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
   return function (hook) {
     // Hooks can either return nothing or a promise
     // that resolves with the `hook` object for asynchronous operations
-    const mario = "../assets/imgs/mario.png"
+    const mario = "http://res.cloudinary.com/hedgehogs4578/image/upload/v1498062873/mario_yllwvl.png"
     const { user } = hook.params
 
     // assign the owner of the game
