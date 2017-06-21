@@ -8,7 +8,7 @@ module.exports = function (app) {
 
   const playerSchema = new Schema ({
     character: { type: String },
-    userId: { type: String},
+    userId: { type: Schema.Types.ObjectId, ref: 'users'},
     clickCount: { type: Number}
   });
 
@@ -17,7 +17,8 @@ module.exports = function (app) {
     countdownTimer: { type: Number, default: 15},
     start: { type: Boolean, default: false},
     evenScore: { type: Boolean, default: true},
-    winner: { type: Boolean, default: false},
+    winnerId: { type: Schema.Types.ObjectId, ref: 'users' },
+    userId: { type: Schema.Types.ObjectId, ref: 'users' },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
   });
