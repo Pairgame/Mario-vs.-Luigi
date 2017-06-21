@@ -1,7 +1,7 @@
 const assert = require('assert');
 const createGame = require('../../src/hooks/create-game');
 
-describe('\'createGame\' hook', () => {
+describe('\'create-game\' hook', () => {
   it('runs the hook', () => {
     // A mock hook object
     const mock = {};
