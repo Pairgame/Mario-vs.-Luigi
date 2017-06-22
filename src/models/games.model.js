@@ -13,6 +13,8 @@ module.exports = function (app) {
   });
 
   const games = new Schema({
+    player1: [playerSchema],
+    player2: [playerSchema],
     players: [playerSchema],
     countdownTimer: { type: Number, default: 15},
     start: { type: Boolean, default: false},

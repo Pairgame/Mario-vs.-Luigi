@@ -18,7 +18,10 @@ const ownerSchema = {
   }
 };
 
-// const joinGame = require('../../hooks/join-game');
+const joinGame = require('../../hooks/join-game');
+
+
+const joinGame = require('../../hooks/join-game');
 
 
 module.exports = {
@@ -27,8 +30,8 @@ module.exports = {
     find: [],
     get: [],
     create: [createGame()],
-    update: [],
-    patch: [],
+    update: [joinGame()],
+    patch: [joinGame()],
     remove: []
   },
 
