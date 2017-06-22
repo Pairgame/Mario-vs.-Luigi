@@ -1,4 +1,5 @@
 {
-  "host": "games-api-app.feathersjs.com",
-  "port": "PORT"
+  "host": "mariogame-api.herokuapp.com",
+  "port": "PORT",
+  "mongodb": "MONGODB_URI"
 }
