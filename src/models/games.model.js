@@ -13,6 +13,7 @@ module.exports = function (app) {
   });
 
   const games = new Schema({
+    name: { type: String },
     player1: [playerSchema],
     player2: [playerSchema],
     players: [playerSchema],

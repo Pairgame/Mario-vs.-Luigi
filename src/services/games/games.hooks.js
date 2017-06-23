@@ -20,10 +20,6 @@ const ownerSchema = {
 
 const joinGame = require('../../hooks/join-game');
 
-
-const joinGame = require('../../hooks/join-game');
-
-
 module.exports = {
   before: {
     all: [ ...restrict ],
