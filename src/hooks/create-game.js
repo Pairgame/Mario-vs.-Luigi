@@ -14,7 +14,7 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
     hook.data.name = `${user.name}'s game!'`
     console.log(hook.data)
     // add the owner to the players, as the first player in the game
-    hook.data.player1 = [{
+    hook.data.players = [{
       userId: user._id,
       clickCount: 0,
       character: mario
